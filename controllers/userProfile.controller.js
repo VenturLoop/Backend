@@ -1,5 +1,5 @@
 // userProfileController.mjs or userProfileController.js (with "type": "module" in package.json)
-import UserProfile from '../models/UserProfile.model.js'; // Adjust the path as necessary
+import UserProfile from '../Models/UserProfile.model.js'; // Adjust the path as necessary
 
 // Create a new user profile
 export const createUserProfile = async (req, res) => {
