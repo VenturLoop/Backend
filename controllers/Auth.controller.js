@@ -9,16 +9,16 @@ export const Signup = async (req, res) => {
         const { name, email, password } = req.body;
 
         // Initial logging for request data
-        console.log("Signup request data:", req.body);
+        // console.log("Signup request data:", req.body);
 
-        // Validate all required fields are present
-        if (!name || !email || !password) {
-            console.log("Validation error: Missing fields");
-            return res.status(400).json({
-                success: false,
-                message: "All fields are required.",
-            });
-        }
+        // // Validate all required fields are present
+        // if (!name || !email || !password) {
+        //     console.log("Validation error: Missing fields");
+        //     return res.status(400).json({
+        //         success: false,
+        //         message: "All fields are required.",
+        //     });
+        // }
 
         // Check if user already exists
         const ExistsUser = await UserModel.findOne({ email });
