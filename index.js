@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 // mongoose.connect('mongodb+srv://suraj:Og63m5YlQaO1cCSs@cluster0.6hqfg9t.mongodb.net/ventureLoopDB?retryWrites=true&w=majorit')
-mongoose.connect('mongodb+srv://weventurloop:jLEQ0JSRod26GK2P@cluster0.67kcb.mongodb.net/ventureDB?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://weventurloop:jLEQ0JSRod26GK2P@cluster0.67kcb.mongodb.net/')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
