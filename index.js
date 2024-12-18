@@ -24,7 +24,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://suraj:Og63m5YlQaO1cCSs@cluster0.6hqfg9t.mongodb.net/ventureLoopDB?retryWrites=true&w=majority')
+// mongoose.connect('mongodb+srv://suraj:Og63m5YlQaO1cCSs@cluster0.6hqfg9t.mongodb.net/ventureLoopDB?retryWrites=true&w=majorit')
+mongoose.connect('mongodb+srv://weventurloop:<db_password>@cluster0.67kcb.mongodb.net/ventureDB?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.error('MongoDB connection error:', err));
 
