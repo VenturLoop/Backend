@@ -10,7 +10,7 @@ import { VerifyEmail } from "../controllers/Auth.controller.js";
 const AuthRoutes = express.Router();
 
 
-AuthRoutes.post('/signup',signupValidation, Signup);
+AuthRoutes.post('/signup', Signup);
 AuthRoutes.post('/login', loginValidation, Login);
 AuthRoutes.post("/verify-email", VerifyEmail)
 
